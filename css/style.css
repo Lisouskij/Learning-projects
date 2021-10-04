@@ -147,6 +147,8 @@ body {
 .page__main-block {
 
 }
+.page__services {
+}
 /* --------------------------------main-block-------------------------------------- */
 .main-block {
     position: relative;
@@ -251,6 +253,29 @@ body {
         opacity: 0.5;
     }
 }
+/* --------------------------------services-------------------------------------- */
+
+.services {
+}
+.services__container {
+}
+.services__body {
+}
+.services__column {
+}
+.services__item {
+}
+.item-services {
+}
+.item-services__icon {
+}
+.item-services__title {
+}
+.item-services__text {
+}
+
+
+
 /* --------------------------------footer-------------------------------------- */
 footer {
 
