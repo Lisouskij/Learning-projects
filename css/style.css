@@ -38,8 +38,10 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: #000000;
+    font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
+    font-family: Montserrat;
 }
 
 .wrapper {
@@ -51,4 +53,77 @@ body {
 ._container{
     max-width: 1046px;
     margin: 0px auto;
+    padding: 0px 15px;
+    /* padding will not be included in the size: 1046 + 30px (1076px) */
+    box-sizing: content-box;
+}
+
+
+/* --------------------------------header-------------------------------------- */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items:  center;
+}
+@media (max-width: 479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    /* to adopt color, links do not inherit color */
+    color: inherit; 
+}
+.header__menu {
+    margin: 0px 0px 0px 133px;
+}
+@media (max-width: 992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+@media (max-width: 767px) {
+    .header__menu {
+        margin: 0px 0px 0px 35px;
+    }
+}
+@media (max-width: 479px) {
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+.menu {
+    padding: 5px 0px;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .menu__item {
+    margin: 0px 21px 0px 0px;
+} */
+
+/* indent for all but the last */
+.menu__item:not(:last-child) {
+    margin: 0px 21px 0px 0px;
+}
+.menu__link {
+    color: #737373;
+    line-height: 171.429%;
+    font-weight: 600;
+}
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 18px;
+    }
 }
